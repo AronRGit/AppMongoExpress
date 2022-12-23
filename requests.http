@@ -1,0 +1,40 @@
+###
+
+POST http://localhost:3000/api/clientes HTTP/1.1
+Content-Type: application/json
+
+{
+    
+"nomb_cliente" :"Juan Perez",
+"telefono":"12321321",
+"ciudad":"Arequipa",
+"calle":"9 de noviembre",
+"numero": "132",
+"estado":"Camana",
+"fecha_nacimiento":"11/11/1993"
+}
+
+###
+GET http://localhost:3000/api/clientes HTTP/1.1
+
+###
+GET http://localhost:3000/api/clientes/63a5af122c453420401ba9ea HTTP/1.1
+
+###
+PUT http://localhost:3000/api/clientes/63a5af122c453420401ba9ea HTTP/1.1
+Content-Type: application/json
+
+{
+    
+"nomb_cliente" :"Dennys Aron",
+"telefono":"99775660",
+"ciudad":"Lima",
+"calle":"Los rosales",
+"numero": "213",
+"estado":"Lima",
+"fecha_nacimiento":"16/10/1995"
+}
+
+###
+
+DELETE http://localhost:3000/api/clientes/63a5b789771731d20fdec6f8 HTTP/1.1
